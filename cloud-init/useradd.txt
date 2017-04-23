@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - name: jritenour
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2HKckyfW1r2riqO30AvgU+dhsGtb6YvBVfNXfMHQ7gpA/EkRbhNP5ju3Gkrymdy0HFl4NBdBB/c7nIUCW3yGBXQWy6yWgGgYCkfMriJ6rJHHMIAguQdYP/Eoa1U9kR9Xe1mpZuH84H+438YkpHu3/UnRXWPXEXhhpxVKrZMo5DAzyWxm4GurMfufqpkC4CfQ+3HV6HwwHjBdyJ/Cgn/Chy0XdHmpU3GlmHkA5bJQhGIkSOz0gDxdQku2RhZNEzu/aRkWDC0qd8bwtEbTSrTYVwmWsW7ivxLc1iFksBm/jP8IQ3MuqOJ4sNRyKu8U++6ieBEXbbSeiZq4h4eTnSdjb jritenour@jritenour-fedora-msi
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+  - name: ansible
+    ssh-authorized-keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdswCY7TJNuG4zXNqy8hzQsp7zoK6x3wxcBj1RSWUQJcOvXw2kLrqpekJTZ7QZICMxDF/bLb51aEQmfTKCoRXgEqbcKkL81e8nsn69Sy7ZUJXylLOULZE6WRWNCpQxluctZib8rr0pDKYZl/PoQWCXvtqxvVk0UkCY6IZ85CXGWO/9+yLOKuzGOodyLy0MxHITkyEHk2N+d1ImV2jpjHhS7hqS45Nv9NzARKLoSqSVVuWQGkTZNNjqsv/IUREacnNZJuRFKItC/RyhF5diR1NAU5YZ5tTqcIxXAIPteid0yNULU+sh9LeoE9IIfQGWvM+kNNpochoAAXJZbAl1qIfb centos@ansible.novalocal
