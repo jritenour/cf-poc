@@ -1,3 +1,14 @@
 #cloud-config
 packages:
  - httpd
+
+write_files:
+  - path: "/var/www/html/index.html"
+    permissions: "0644"
+    owner: "apache"
+    content: |
+      This is a simple apache server.
+
+runcmd:
+  - [ service httpd start ]
+  - [ chkconfig httpd on ]

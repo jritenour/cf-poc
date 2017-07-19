@@ -1,0 +1,7 @@
+#cloud-config
+
+rh_subscription:
+  activation-key:
+  org: 
+  server-hostname: linrhsat0.ux.hra.nycnet
+  rhsm-baseurl: https://linrhsat0.ux.hra.nycnet/pulp/ostree/web/
