@@ -1,0 +1,14 @@
+---
+object_type: instance
+version: 1.0
+object:
+  attributes:
+    display_name: 
+    name: List_Cloud_Tenants_with_Group_Tag
+    inherits: 
+    description: 
+  fields:
+  - tenant_category:
+      value: tenant
+  - execute:
+      value: list_cloud_tenants

@@ -1,0 +1,18 @@
+---
+object_type: instance
+version: 1.0
+object:
+  attributes:
+    display_name: 
+    name: dns_update
+    inherits: 
+    description: 
+  fields:
+  - dnsserver:
+      value: 192.168.155.112
+  - dnskey:
+      value: keyname
+  - dnssecret:
+      value: v2:{UE6wBHIfr/yI0weDcIA5F6CYtu95laOwqpQ6F21xSA4KnhN/+iq3PYJI2Eib0Dgsb76nFWrqlHl8cr+K6UyYgjV5FvssjNJDrFP1aclaYIWe05ZNHXSSsuxEk0okVQJa1a8qPT8dmTJoabQTj7aZZtMRmTtyWC8HHynYE4pv6h0=}
+  - execute:
+      value: dns_update
