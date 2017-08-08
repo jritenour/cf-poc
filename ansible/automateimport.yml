@@ -13,3 +13,12 @@
       command: '/var/www/miq/vmdb/bin/rake evm:automate:import DOMAIN=POC ZIP_FILE=/root/datastore.zip PREVIEW=false ENABLED=true'
       args:
         chdir: /var/www/miq/vmdb
+    - name: Download dialog file
+      get_url:
+        url: https://raw.githubusercontent.com/jritenour/cf-poc/master/dialogs/dialog.yml
+        dest: /root/datastore.zip
+        mode: 0644
+    - name: Import service dialogs
+      command: "/var/www/miq/vmdb/bin/rake dialogs:import['/root/dialog_export_20170719_114112.yml']"
+      args:
+        chdir: /var/www/miq/vmdb
