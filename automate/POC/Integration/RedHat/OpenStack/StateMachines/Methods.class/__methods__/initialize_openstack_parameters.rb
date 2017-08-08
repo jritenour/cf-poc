@@ -1,3 +1,0 @@
-#
-# Description: <Method description here>
-#

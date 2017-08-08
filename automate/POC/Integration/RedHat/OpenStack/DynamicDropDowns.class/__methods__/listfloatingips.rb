@@ -10,7 +10,6 @@ begin
 dump_root
 
 provnet=$evm.vmdb(:ems).find_by_type("ManageIQ::Providers::Openstack::NetworkManager")
-#rov_net=$evm.vmdb(:ems).find_by_id(10000000000004)
 ip_hash = {}
 provnet.floating_ips.each do |floatip|
 ip_hash[floatip.id] = "#{floatip.address}" if floatip.status == "DOWN"

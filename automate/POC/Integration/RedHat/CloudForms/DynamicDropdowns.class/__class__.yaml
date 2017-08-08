@@ -5,7 +5,7 @@ object:
   attributes:
     description: 
     display_name: 
-    name: DNS
+    name: DynamicDropdowns
     type: 
     inherits: 
     visibility: 
@@ -13,12 +13,12 @@ object:
   schema:
   - field:
       aetype: attribute
-      name: dnsserver
+      name: cfhost
       display_name: 
       datatype: string
       priority: 1
       owner: 
-      default_value: 10.253.130.12
+      default_value: 192.168.2.156
       substitute: true
       message: create
       visibility: 
@@ -33,12 +33,12 @@ object:
       max_time: 
   - field:
       aetype: attribute
-      name: dnskey
+      name: cfuser
       display_name: 
       datatype: string
       priority: 2
       owner: 
-      default_value: keyname
+      default_value: admin
       substitute: true
       message: create
       visibility: 
@@ -53,32 +53,12 @@ object:
       max_time: 
   - field:
       aetype: attribute
-      name: dnssecret
+      name: cfpass
       display_name: 
       datatype: password
       priority: 3
       owner: 
-      default_value: v2:{QSoCtnke5ld/K/jDeB0J2SEiAuUpczE1pWoPNr39PnRyqVWF0zkmJASlRhy74FDseGl6c2w7mM+FIYI4gQn1iSLItVcMC7yH/tX+pxnfhdvVFlgipmoFziTftKjVQltP}
-      substitute: true
-      message: create
-      visibility: 
-      collect: 
-      scope: 
-      description: 
-      condition: 
-      on_entry: 
-      on_exit: 
-      on_error: 
-      max_retries: 
-      max_time: 
-  - field:
-      aetype: attribute
-      name: domain
-      display_name: 
-      datatype: string
-      priority: 4
-      owner: 
-      default_value: opst.ux.hra.nycnet
+      default_value: v2:{yE4czARtBy7gNVzYLMzS5A==}
       substitute: true
       message: create
       visibility: 
@@ -93,10 +73,10 @@ object:
       max_time: 
   - field:
       aetype: method
-      name: execute
+      name: execcute
       display_name: 
       datatype: string
-      priority: 5
+      priority: 4
       owner: 
       default_value: 
       substitute: true

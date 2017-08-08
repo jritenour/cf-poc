@@ -8,6 +8,6 @@ object:
     display_name: 
     priority: 2
     enabled: true
-    tenant_id: 10000000000001
+    tenant_id: 20000000000001
     source: user
     top_level_namespace: 
