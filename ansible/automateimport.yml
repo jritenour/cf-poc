@@ -16,9 +16,9 @@
     - name: Download dialog file
       get_url:
         url: https://raw.githubusercontent.com/jritenour/cf-poc/master/dialogs/dialog.yml
-        dest: /root/datastore.zip
+        dest: /root/dialog.yml
         mode: 0644
     - name: Import service dialogs
-      command: "/var/www/miq/vmdb/bin/rake dialogs:import['/root/dialog_export_20170719_114112.yml']"
+      command: "/var/www/miq/vmdb/bin/rake dialogs:import['/root/dialog.yml']"
       args:
         chdir: /var/www/miq/vmdb
