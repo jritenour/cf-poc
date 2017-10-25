@@ -4,9 +4,9 @@ version: 1.0
 object:
   attributes:
     display_name: 
-    name: create_dns
+    name: List_OpenStack_Flavors
     inherits: 
     description: 
   fields:
-  - rel1:
-      value: "/POC/Integration/Generic/DNS/dns_update"
+  - execute:
+      value: List_OpenStack_Flavors

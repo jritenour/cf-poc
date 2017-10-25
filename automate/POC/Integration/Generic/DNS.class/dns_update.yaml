@@ -8,11 +8,9 @@ object:
     inherits: 
     description: 
   fields:
-  - dnsserver:
-      value: 10.253.130.12
-  - dnskey:
-      value: keyname
   - dnssecret:
-      value: v2:{UE6wBHIfr/yI0weDcIA5F6CYtu95laOwqpQ6F21xSA4KnhN/+iq3PYJI2Eib0Dgsb76nFWrqlHl8cr+K6UyYgjV5FvssjNJDrFP1aclaYIWe05ZNHXSSsuxEk0okVQJa1a8qPT8dmTJoabQTj7aZZtMRmTtyWC8HHynYE4pv6h0=}
+      value: v2:{EDnB4kirg4D3g/GveKhufjvO5KI5Lxl4aZCwFGcvx63G7YV2n1EYMPsY/qxlc6jcUPuIXv1+S5o7UJ7gkd08j1aOdbYUmZOfhIavtPtNk7kIEP9S4R5nAg3pu/624DCb}
+  - domain:
+      value: ".int.rhshadowbox.com"
   - execute:
       value: dns_update

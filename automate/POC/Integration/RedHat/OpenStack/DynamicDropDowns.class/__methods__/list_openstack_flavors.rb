@@ -9,19 +9,14 @@ begin
 
 dump_root
 
-provnet=$evm.vmdb(:ems).find(20000000000011)
-ip_hash = {}
-provnet.floating_ips.each do |floatip|
-ip_hash[floatip.id] = "#{floatip.address}" if floatip.status == "DOWN"
+prov=$evm.vmdb(:ems).find_by_type("ManageIQ::Providers::Openstack::CloudManager")
+flav_hash = {}
+prov.flavors.each do |flavor|
+flav_hash[flavor.id] = "#{flavor.name}"
 end
-ip_hash[nil] = nil 
+flav_hash[nil] = nil 
 
-$evm.object['values'] = ip_hash
-  if $evm.root['dialog_float_ip_checkbox'] == 't'
-    $evm.object['visible'] = true
-  else
-    $evm.object['visible'] = false
-  end
+$evm.object['values'] = flav_hash
 
 $evm.log(:info, "Dropdown Values Are #{$evm.object['values'].inspect}")
 

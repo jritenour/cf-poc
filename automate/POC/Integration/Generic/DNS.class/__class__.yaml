@@ -18,7 +18,7 @@ object:
       datatype: string
       priority: 1
       owner: 
-      default_value: 10.253.130.12
+      default_value: 192.168.0.6
       substitute: true
       message: create
       visibility: 
@@ -58,7 +58,7 @@ object:
       datatype: password
       priority: 3
       owner: 
-      default_value: v2:{QSoCtnke5ld/K/jDeB0J2SEiAuUpczE1pWoPNr39PnRyqVWF0zkmJASlRhy74FDseGl6c2w7mM+FIYI4gQn1iSLItVcMC7yH/tX+pxnfhdvVFlgipmoFziTftKjVQltP}
+      default_value: v2:{EDnB4kirg4D3g/GveKhufjvO5KI5Lxl4aZCwFGcvx63G7YV2n1EYMPsY/qxlc6jcUPuIXv1+S5o7UJ7gkd08j1aOdbYUmZOfhIavtPtNk7kIEP9S4R5nAg3pu/624DCb}
       substitute: true
       message: create
       visibility: 
@@ -78,7 +78,7 @@ object:
       datatype: string
       priority: 4
       owner: 
-      default_value: opst.ux.hra.nycnet
+      default_value: int.rhshadowbox.com
       substitute: true
       message: create
       visibility: 

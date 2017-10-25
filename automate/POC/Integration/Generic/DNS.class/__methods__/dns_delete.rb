@@ -17,10 +17,10 @@ begin
 dump_root
 prov = $evm.root['miq_provision']
 vm = $evm.root['vm'] || prov.vm
-fqdn=vm.name
-#domain=".home.lab"
-#fqdn=hostname+domain
-ip=vm.ipaddresses[0]
+hostname=vm.name
+domain=$evm.object['domain']
+fqdn=hostname+domain
+ip=vm.ipaddresses[1] || vm.ipaddresses[0]
 dnsserver=$evm.object['dnsserver']
 dnskey=$evm.object['dnskey']
 dnssecret=$evm.object.decrypt('dnssecret')
@@ -29,7 +29,7 @@ dnssecret=$evm.object.decrypt('dnssecret')
       $evm.log(:info, "Using DNS Server at #{dnsserver}")  
 
 #dnsserver        = Resolv.getaddress(dnsserver) rescue nil 
-  IO.popen("nsupdate -y #{dnskey}:#{dnssecret} -v", 'r+') do |f|
+  IO.popen("nsupdate -y hmac-sha512:#{dnskey}:#{dnssecret} -v", 'r+') do |f|
    f.puts("server #{dnsserver}")
     f.puts("update delete #{fqdn} A ")  
     $evm.log("info","IAAS: #{@method} Deleting DNS record for #{fqdn} #{ip}")  
