@@ -1,7 +1,15 @@
 #cloud-config
 
+#rh_subscription:
+#  activation-key:
+#  org: 
+#  server-hostname: satellite.example.com
+#  rhsm-baseurl: https://satellite.example.com/pulp/ostree/web/
+
 rh_subscription:
-  activation-key:
-  org: 
-  server-hostname: linrhsat0.ux.hra.nycnet
-  rhsm-baseurl: https://linrhsat0.ux.hra.nycnet/pulp/ostree/web/
+  username: '<username>'
+  password: '<password>'
+  auto-attach: False
+  add-pool: [ '<poolid>' ]
+  disable-repo: [ '*' ]
+  enable-repo: [ 'rhel-7-server-rpms' ]
