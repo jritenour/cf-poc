@@ -2,7 +2,6 @@
 - description: 
   buttons: submit,cancel
   label: Create VM (EC2)
-  blueprint_id: 
   dialog_tabs:
   - description: 
     display: edit
@@ -56,6 +55,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: tag_0_environment
         description: 
         data_type: string
@@ -101,6 +101,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
     - description: 
       display: edit
       label: VM Information
@@ -146,6 +147,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: option_1_instance_type
         description: 
         data_type: 
@@ -158,161 +160,7 @@
         required_method: 
         required_method_options: {}
         default_value: 
-        values:
-        - - 20000000000001
-          - t2.nano
-        - - 20000000000002
-          - t2.micro
-        - - 20000000000003
-          - t2.small
-        - - 20000000000004
-          - t2.medium
-        - - 20000000000005
-          - t2.large
-        - - 20000000000006
-          - m3.medium
-        - - 20000000000007
-          - m3.large
-        - - 20000000000008
-          - m3.xlarge
-        - - 20000000000009
-          - m3.2xlarge
-        - - 20000000000010
-          - m4.large
-        - - 20000000000011
-          - m4.xlarge
-        - - 20000000000012
-          - m4.2xlarge
-        - - 20000000000013
-          - m4.4xlarge
-        - - 20000000000014
-          - m4.10xlarge
-        - - 20000000000015
-          - c3.large
-        - - 20000000000016
-          - c3.xlarge
-        - - 20000000000017
-          - c3.2xlarge
-        - - 20000000000018
-          - c3.4xlarge
-        - - 20000000000019
-          - c3.8xlarge
-        - - 20000000000020
-          - c4.large
-        - - 20000000000021
-          - c4.xlarge
-        - - 20000000000022
-          - c4.2xlarge
-        - - 20000000000023
-          - c4.4xlarge
-        - - 20000000000024
-          - c4.8xlarge
-        - - 20000000000025
-          - g2.2xlarge
-        - - 20000000000026
-          - g2.8xlarge
-        - - 20000000000027
-          - r3.large
-        - - 20000000000028
-          - r3.xlarge
-        - - 20000000000029
-          - r3.2xlarge
-        - - 20000000000030
-          - r3.4xlarge
-        - - 20000000000031
-          - r3.8xlarge
-        - - 20000000000032
-          - d2.xlarge
-        - - 20000000000033
-          - d2.2xlarge
-        - - 20000000000034
-          - d2.4xlarge
-        - - 20000000000035
-          - d2.8xlarge
-        - - 20000000000036
-          - x1.32xlarge
-        - - 20000000000037
-          - t2.xlarge
-        - - 20000000000038
-          - t2.2xlarge
-        - - 20000000000039
-          - m4.16xlarge
-        - - 20000000000040
-          - p2.xlarge
-        - - 20000000000041
-          - p2.8xlarge
-        - - 20000000000042
-          - p2.16xlarge
-        - - 20000000000043
-          - x1.16xlarge
-        - - 20000000000044
-          - r4.large
-        - - 20000000000045
-          - r4.xlarge
-        - - 20000000000046
-          - r4.2xlarge
-        - - 20000000000047
-          - r4.4xlarge
-        - - 20000000000048
-          - r4.8xlarge
-        - - 20000000000049
-          - r4.16xlarge
-        - - 20000000000050
-          - i3.large
-        - - 20000000000051
-          - i3.xlarge
-        - - 20000000000052
-          - i3.2xlarge
-        - - 20000000000053
-          - i3.4xlarge
-        - - 20000000000054
-          - i3.8xlarge
-        - - 20000000000055
-          - i3.16xlarge
-        - - 20000000000056
-          - f1.2xlarge
-        - - 20000000000057
-          - f1.16xlarge
-        - - 20000000000058
-          - t1.micro
-        - - 20000000000059
-          - m1.small
-        - - 20000000000060
-          - m1.medium
-        - - 20000000000061
-          - m1.large
-        - - 20000000000062
-          - m1.xlarge
-        - - 20000000000063
-          - c1.medium
-        - - 20000000000064
-          - c1.xlarge
-        - - 20000000000065
-          - cc2.8xlarge
-        - - 20000000000066
-          - cg1.4xlarge
-        - - 20000000000067
-          - m2.xlarge
-        - - 20000000000068
-          - m2.2xlarge
-        - - 20000000000069
-          - m2.4xlarge
-        - - 20000000000070
-          - cr1.8xlarge
-        - - 20000000000071
-          - hi1.4xlarge
-        - - 20000000000072
-          - hs1.8xlarge
-        - - 20000000000073
-          - i2.xlarge
-        - - 20000000000074
-          - i2.2xlarge
-        - - 20000000000075
-          - i2.4xlarge
-        - - 20000000000076
-          - i2.8xlarge
-        - - 
-          - 
+        values: 
         values_method: 
         values_method_options: {}
         options:
@@ -338,6 +186,7 @@
           ae_instance: ListEC2Flavors
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: tag_1_function
         description: 
         data_type: string
@@ -386,6 +235,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: option_1_keypair
         description: Paste your public key
         data_type: 
@@ -424,10 +274,10 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
 - description: 
   buttons: submit,cancel
   label: Create VM (OpenStack)
-  blueprint_id: 
   dialog_tabs:
   - description: 
     display: edit
@@ -481,6 +331,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: tag_0_environment
         description: 
         data_type: string
@@ -526,6 +377,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
     - description: 
       display: edit
       label: VM Information
@@ -571,6 +423,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: option_1_instance_type
         description: 
         data_type: string
@@ -583,9 +436,7 @@
         required_method: 
         required_method_options: {}
         default_value: 
-        values:
-        - - ''
-          - "< No Flavors found, Contact Administrator >"
+        values: 
         values_method: 
         values_method_options: {}
         options:
@@ -613,6 +464,7 @@
           ae_instance: List_OpenStack_Flavors
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: option_1_volume_0_size
         description: 
         data_type: string
@@ -663,6 +515,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: option_1_volume_1_size
         description: Create and attach an additional volume
         data_type: 
@@ -701,6 +554,7 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
       - name: float_ip_checkbox
         description: 
         data_type: 
@@ -738,6 +592,8 @@
           ae_instance: 
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders:
+        - option_1_floating_ip_address
       - name: option_1_floating_ip_address
         description: 
         data_type: string
@@ -750,9 +606,7 @@
         required_method: 
         required_method_options: {}
         default_value: 
-        values:
-        - - 
-          - "<Script error>"
+        values: 
         values_method: 
         values_method_options: {}
         options:
@@ -780,3 +634,255 @@
           ae_instance: ListFloatingIPs
           ae_message: 
           ae_attributes: {}
+        dialog_field_responders: []
+- description: 
+  buttons: submit,cancel
+  label: Create VM (RHV)
+  dialog_tabs:
+  - description: 
+    display: edit
+    label: OpenStack Provisioning
+    display_method: 
+    display_method_options: 
+    position: 0
+    dialog_groups:
+    - description: 
+      display: edit
+      label: Service Information
+      display_method: 
+      display_method_options: 
+      position: 0
+      dialog_fields:
+      - name: service_name
+        description: 
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: ''
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: Service Name
+        position: 0
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldTextBox
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+        dialog_field_responders: []
+      - name: tag_0_environment
+        description: 
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: true
+        required_method: 
+        required_method_options: {}
+        default_value: dev
+        values:
+        - - dev
+          - Development
+        - - prod
+          - Production
+        - - test
+          - Test
+        values_method: 
+        values_method_options: {}
+        options:
+          :sort_by: description
+          :sort_order: ascending
+        label: Environment
+        position: 1
+        validator_type: 
+        validator_rule: 
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldRadioButton
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+        dialog_field_responders: []
+    - description: 
+      display: edit
+      label: VM Information
+      display_method: 
+      display_method_options: 
+      position: 1
+      dialog_fields:
+      - name: option_1_vm_name
+        description: 
+        data_type: 
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: ''
+        values: 
+        values_method: 
+        values_method_options: {}
+        options:
+          :protected: false
+        label: VM Name
+        position: 0
+        validator_type: ''
+        validator_rule: "^[a-z0-9-]{0,12}$"
+        reconfigurable: 
+        dynamic: false
+        show_refresh_button: 
+        load_values_on_init: 
+        read_only: false
+        auto_refresh: 
+        trigger_auto_refresh: 
+        visible: true
+        type: DialogFieldTextBox
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+        dialog_field_responders: []
+      - name: option_1_vm_memory
+        description: ''
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: '1024'
+        values:
+        - - 
+          - "<None>"
+        - - '1024'
+          - 1 GB
+        - - '2048'
+          - 2 GB
+        - - '4096'
+          - 4 GB
+        - - '8192'
+          - 8 GB
+        values_method: 
+        values_method_options: {}
+        options:
+          :sort_by: description
+          :sort_order: ascending
+          :force_multi_value: false
+        label: Memory
+        position: 1
+        validator_type: 
+        validator_rule: 
+        reconfigurable: false
+        dynamic: false
+        show_refresh_button: false
+        load_values_on_init: false
+        read_only: false
+        auto_refresh: false
+        trigger_auto_refresh: false
+        visible: true
+        type: DialogFieldDropDownList
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+        dialog_field_responders: []
+      - name: option_1_number_of_sockets
+        description: ''
+        data_type: string
+        notes: 
+        notes_display: 
+        display: edit
+        display_method: 
+        display_method_options: {}
+        required: false
+        required_method: 
+        required_method_options: {}
+        default_value: '1'
+        values:
+        - - 
+          - "<None>"
+        - - '1'
+          - '1'
+        - - '2'
+          - '2'
+        - - '4'
+          - '4'
+        - - '8'
+          - '8'
+        values_method: 
+        values_method_options: {}
+        options:
+          :sort_by: description
+          :sort_order: ascending
+          :force_multi_value: false
+        label: Number of CPUs (by socket)
+        position: 2
+        validator_type: 
+        validator_rule: 
+        reconfigurable: false
+        dynamic: false
+        show_refresh_button: false
+        load_values_on_init: false
+        read_only: false
+        auto_refresh: false
+        trigger_auto_refresh: false
+        visible: true
+        type: DialogFieldDropDownList
+        resource_action:
+          action: 
+          resource_type: DialogField
+          ae_namespace: 
+          ae_class: 
+          ae_instance: 
+          ae_message: 
+          ae_attributes: {}
+        dialog_field_responders: []
